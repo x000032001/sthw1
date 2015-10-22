@@ -36,3 +36,11 @@ TEST( testTriangle , Equilateral )
 	ASSERT_EQ( TriEqu , testTriangle(100,100,100) );
 	ASSERT_NE( TriEqu , testTriangle(3,4,3) );
 }
+
+TEST( testTriangle , Scalene )
+{
+	ASSERT_EQ( TriSca , testTriangle(2,3,4) );
+	ASSERT_EQ( TriSca , testTriangle(4,5,6) );
+	ASSERT_NE( TriSca , testTriangle(3,3,4) );
+}
+
