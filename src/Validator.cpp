@@ -12,5 +12,8 @@ Triangle testTriangle(int a,int b,int c)
 	if( a == b && b == c )
 		return TriEqu;
 
+	if( a != b && b != c && a != c )
+		return TriSca;
+
 	return TriIs;
 }
