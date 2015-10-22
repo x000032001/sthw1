@@ -3,6 +3,8 @@
 
 enum Triangle 
 {
+	TriNot ,
+	TriIs
 };
 
 Triangle testTriangle(int a,int b,int c);
