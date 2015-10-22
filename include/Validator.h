@@ -3,7 +3,7 @@
 
 enum Triangle 
 {
-	TriNot ,
+	TriNot , // fail range
 	TriIs
 };
 

@@ -19,5 +19,4 @@ TEST( testTriangle , Not )
 	ASSERT_EQ( TriNot , testTriangle(201,0,0) );
 	ASSERT_EQ( TriNot , testTriangle(0,201,0) );
 	ASSERT_EQ( TriNot , testTriangle(0,0,201) );
-
 }
