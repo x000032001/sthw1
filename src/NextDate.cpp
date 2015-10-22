@@ -51,7 +51,43 @@ string nextDate(string now)
 		}
 		else
 		{
-			return "eror";
+			return "error";
+		}
+	}
+
+	if( month == 2 )
+	{
+		if( day < 28 )
+		{
+			day++;
+		}
+		else if( day == 28 )
+		{
+			if( (year % 4 == 0 && year % 100 != 0 ) || year % 400 == 0 )
+			{
+				day++;
+			}
+			else
+			{
+				day = 1;
+				month = 3;
+			}
+		}
+		else if( day == 29 )
+		{
+			if( (year % 4 == 0 && year % 100 != 0 ) || year % 400 == 0 )
+			{
+				day = 1;
+				month = 3;
+			}
+			else
+			{
+				return "error";
+			}
+		}
+		else
+		{
+			return "error";
 		}
 	}
 
