@@ -22,6 +22,10 @@ double countCms(int locks,int stocks,int barrels)
 		ret += 0.1 * 1000;
 		ret += 0.15 * (sales-1000);
 	}
+	else
+	{
+		ret += 0.1 * sales;
+	}
 
 	return ret;
 }
