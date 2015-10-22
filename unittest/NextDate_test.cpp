@@ -15,3 +15,11 @@ TEST( NextDate , MonthHas30Days )
 	ASSERT_EQ( "2000 06 24" , nextDate("2000 06 23") );
 	ASSERT_EQ( "2000 12 01" , nextDate("2000 11 30") );
 }
+
+TEST( NextDate , Feb )
+{
+	ASSERT_EQ( "2000 02 02" , nextDate("2000 02 01") );
+	ASSERT_EQ( "2000 02 29" , nextDate("2000 02 28") );
+	ASSERT_EQ( "2000 03 01" , nextDate("2000 02 29") );
+	ASSERT_EQ( "1900 03 01" , nextDate("1900 02 28") );
+}
