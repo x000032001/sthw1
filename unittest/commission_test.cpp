@@ -16,3 +16,8 @@ TEST( Commission , MoreThan1000 )
 	ASSERT_EQ( 175 , countCms(0,0,60) );
 }
 
+TEST( Commission , LessThan1000 )
+{
+	ASSERT_EQ( 50 , countCms(0,0,20) );
+}
+
