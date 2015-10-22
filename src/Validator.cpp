@@ -9,5 +9,8 @@ Triangle testTriangle(int a,int b,int c)
 	if( !(a+b>c && a+c>b && b+c>a) )
 		return TriIll;
 
+	if( a == b && b == c )
+		return TriEqu;
+
 	return TriIs;
 }
