@@ -2,4 +2,5 @@
 
 string nextDate(string now)
 {
+	return "";
 }
