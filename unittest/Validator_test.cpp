@@ -29,3 +29,10 @@ TEST( testTriangle , Illegal )
 	ASSERT_EQ( TriIll , testTriangle(3,1,1) );
 	ASSERT_EQ( TriIll , testTriangle(1,3,1) );
 }
+
+TEST( testTriangle , Equilateral )
+{
+	ASSERT_EQ( TriEqu , testTriangle(1,1,1) );
+	ASSERT_EQ( TriEqu , testTriangle(100,100,100) );
+	ASSERT_NE( TriEqu , testTriangle(3,4,3) );
+}

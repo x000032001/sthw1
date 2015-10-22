@@ -5,6 +5,7 @@ enum Triangle
 {
 	TriNot , // fail range
 	TriIll , // not fit triangle formula
+	TriEqu , 
 	TriIs
 };
 
