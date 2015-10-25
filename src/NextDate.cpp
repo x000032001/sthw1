@@ -35,9 +35,7 @@ string nextDate(string now)
 			return "error";
 		}
 	}
-
-	// 30 days
-	if( month == 4 || month == 6
+	else if( month == 4 || month == 6 // 30days
 	||  month == 9 || month == 11 )
 	{
 		if( day < 30 )
@@ -54,8 +52,7 @@ string nextDate(string now)
 			return "error";
 		}
 	}
-
-	if( month == 2 )
+	else if( month == 2 )
 	{
 		if( day < 28 )
 		{
