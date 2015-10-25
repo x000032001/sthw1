@@ -44,3 +44,32 @@ TEST( testTriangle , Scalene )
 	ASSERT_NE( TriSca , testTriangle(3,3,4) );
 }
 
+TEST( testTriangle , DecisionTable )
+{
+	int input[][3] = {
+		{4,1,2},
+		{1,4,2},
+		{1,2,4},
+		{5,5,5},
+		{2,2,3},
+		{2,3,2},
+		{3,2,2},
+		{3,4,5}
+	};
+
+	Triangle expect[] = {
+		TriIll ,
+		TriIll ,
+		TriIll ,
+		TriEqu ,
+		TriIs ,
+		TriIs ,
+		TriIs ,
+		TriSca
+	};
+
+	for( int i = 0 ; i < sizeof(expect)/sizeof(Triangle) ; ++i ) {
+		ASSERT_EQ( expect[i] , testTriangle(input[i][0],input[i][1],input[i][2]) );
+	}
+
+}
