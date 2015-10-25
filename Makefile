@@ -36,7 +36,7 @@ TESTDIR  = unittest
 
 CXX       = g++
 # compiling flags here
-CXXFLAGS   = -g -Wall -Wextra -pthread -I$(INCDIR)
+CXXFLAGS   = -g -std=c++11 -Wall -Wextra -pthread -I$(INCDIR)
 
 LINKER   = g++ -o
 # linking flags here
