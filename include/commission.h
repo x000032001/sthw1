@@ -12,6 +12,7 @@ using namespace std;
 #define STOCK_ERROR -6
 #define BARREL_ERROR -5
 
+#define OK 5
 
 double retrieve(vector<tuple<int,int,int>>);
 

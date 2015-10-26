@@ -5,7 +5,7 @@ int cms_error_code = 0;
 
 double retrieve(vector<tuple<int,int,int>> input)
 {
-	cms_error_code = 5;
+	cms_error_code = OK;
 	int tlock = 0,tstock = 0,tbarrel = 0;
 	for( size_t i = 0 ; i < input.size() ; ++i )
 	{
@@ -14,7 +14,6 @@ double retrieve(vector<tuple<int,int,int>> input)
 			if( get<0>(input[i]) != -1 )
 			{
 				cms_error_code = TERM_ERROR;
-				puts("TERM_ERROR");
 				return CMS_ERROR;
 			}
 			else
