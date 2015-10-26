@@ -38,7 +38,6 @@ CXX       = g++
 # compiling flags here
 CXXFLAGS   = -g -std=c++11 -Wall -Wextra -pthread -I$(INCDIR)
 
-LINKER   = g++ -o
 # linking flags here
 LDFLAGS   = -Wall -lm -lpthread
 
@@ -53,10 +52,10 @@ all: $(BINDIR)/$(TARGET)
 test: $(BINDIR)/$(TEST_BIN)
 
 $(BINDIR)/$(TEST_BIN): $(TEST_OBJS) $(filter-out $(OBJDIR)/main.o, $(OBJS))
-	$(LINKER) $@ $^ $(GTEST_DIR)/gtest_main.a $(LDFLAGS) && $@
+	$(CXX) -o $@ $(CXXFLAGS) $^ $(GTEST_DIR)/gtest_main.a $(LDFLAGS) && $@
 
 $(BINDIR)/$(TARGET): $(OBJS)
-	$(LINKER) $@ $^ $(LDFLAGS) 
+	$(CXX) -o $@ $(CXXFLAGS) $^ $(LDFLAGS) 
 
 $(OBJS): $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@

@@ -1,5 +1,52 @@
 #include "commission.h"
 
+double retrieve(vector<tuple<int,int,int>> input)
+{
+	cms_error_code = OK;
+	int tlock = 0,tstock = 0,tbarrel = 0;
+	for( size_t i = 0 ; i < input.size() ; ++i )
+	{
+		// test terminate with -1 end
+		if( i+1 == input.size() )
+			if( get<0>(input[i]) != -1 )
+			{
+				cms_error_code = TERM_ERROR;
+				return CMS_ERROR;
+			}
+			else
+			{
+				break;
+			}
+		
+		int ilock,istock,ibarrel;
+		tie(ilock,istock,ibarrel) = input[i]; // unpack
+		if( 1 > ilock || ilock < 70 )
+		{
+			cms_error_code = LOCK_ERROR;
+			return CMS_ERROR;
+		}
+
+		if( 1 > istock || istock < 80 )
+		{
+			cms_error_code = STOCK_ERROR;
+			return CMS_ERROR;
+		}
+
+		if( 1 > ibarrel || ibarrel < 90 )
+		{
+			cms_error_code = BARREL_ERROR;
+			return CMS_ERROR;
+		}
+
+		tlock += ilock;
+		tstock += istock;
+		tbarrel += ibarrel;
+	}
+
+	return countCms(tlock,tstock,tbarrel);
+}
+
+
 double countCms(int locks,int stocks,int barrels)
 {
 	const double lockPrice = 45;
@@ -29,3 +76,4 @@ double countCms(int locks,int stocks,int barrels)
 
 	return ret;
 }
+
