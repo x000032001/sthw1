@@ -11,13 +11,15 @@ using namespace std;
 #define LOCK_ERROR -7
 #define STOCK_ERROR -6
 #define BARREL_ERROR -5
-#define OK 3
 
-int cms_error_code = OK;
 
 double retrieve(vector<tuple<int,int,int>>);
 
 double countCms(int locks,int stocks,int barrels);
 
 
+#endif
+
+#ifndef VAR_HAHA
+extern int cms_error_code;
 #endif

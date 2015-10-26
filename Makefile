@@ -65,8 +65,8 @@ $(TEST_OBJS): $(OBJDIR)/%.o : $(TESTDIR)/%.cpp
 
 .PHONEY: clean
 clean:
-	$(rm) $(OBJS)
+	$(rm) $(OBJDIR)/*
 
 .PHONEY: remove
 remove: clean
-	$(rm) $(BINDIR)/$(TARGET)
+	$(rm) $(BINDIR)/*
