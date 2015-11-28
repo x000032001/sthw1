@@ -34,7 +34,7 @@ INCDIR   = include
 TESTDIR  = unittest
 
 
-CXX       = g++
+CXX       = g++ -fprofile-arcs -ftest-coverage
 # compiling flags here
 CXXFLAGS   = -g -std=c++11 -Wall -Wextra -pthread -I$(INCDIR)
 

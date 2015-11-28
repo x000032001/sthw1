@@ -17,3 +17,5 @@ Triangle testTriangle(int a,int b,int c)
 
 	return TriIs;
 }
+
+

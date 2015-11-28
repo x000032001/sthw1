@@ -1,0 +1,116 @@
+ktest file : 'test000001.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 0
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 0
+
+ktest file : 'test000002.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 1
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 3
+
+ktest file : 'test000003.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 2
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 3
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 1
+
+ktest file : 'test000004.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 2
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 1
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 1
+
+ktest file : 'test000005.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 1
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 1
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 1
+
+ktest file : 'test000006.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 3
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 3
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 1
+
+ktest file : 'test000007.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 1
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 2
+
+ktest file : 'test000008.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 3
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 1
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 3
+
+ktest file : 'test000009.ktest'
+args       : ['Validator.bc']
+num objects: 3
+object    0: name: b'a'
+object    0: size: 4
+object    0: data: 71
+object    1: name: b'b'
+object    1: size: 4
+object    1: data: 63
+object    2: name: b'c'
+object    2: size: 4
+object    2: data: 9

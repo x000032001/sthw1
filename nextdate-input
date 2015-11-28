@@ -1,0 +1,233 @@
+ktest file : 'test000001.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 1
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 0
+
+ktest file : 'test000002.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 4
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 0
+
+ktest file : 'test000003.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 1
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 2147483647
+
+ktest file : 'test000004.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 0
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 0
+
+ktest file : 'test000005.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 12
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 31
+
+ktest file : 'test000006.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 1
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 31
+
+ktest file : 'test000007.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 4
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 30
+
+ktest file : 'test000008.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 0
+
+ktest file : 'test000009.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 4
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 2147483647
+
+ktest file : 'test000010.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 1
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 28
+
+ktest file : 'test000011.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 4
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 28
+
+ktest file : 'test000012.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 2147483647
+
+ktest file : 'test000013.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 28
+
+ktest file : 'test000014.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 100
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 28
+
+ktest file : 'test000015.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 4
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 29
+
+ktest file : 'test000016.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 1
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 29
+
+ktest file : 'test000017.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 0
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 29
+
+ktest file : 'test000018.ktest'
+args       : ['NextDate.bc']
+num objects: 3
+object    0: name: b'y'
+object    0: size: 4
+object    0: data: 100
+object    1: name: b'm'
+object    1: size: 4
+object    1: data: 2
+object    2: name: b'd'
+object    2: size: 4
+object    2: data: 29

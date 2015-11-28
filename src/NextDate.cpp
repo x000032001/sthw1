@@ -16,7 +16,7 @@ string nextDate(string now)
 	||  month == 8 || month == 10
 	||  month == 12 )
 	{
-		if( day < 31 )
+		if( 1 <= day && day < 31 )
 		{
 			day++;
 		}
@@ -38,7 +38,7 @@ string nextDate(string now)
 	else if( month == 4 || month == 6 // 30days
 	||  month == 9 || month == 11 )
 	{
-		if( day < 30 )
+		if( 1 <= day && day < 30 )
 		{
 			day++;
 		}
@@ -54,7 +54,7 @@ string nextDate(string now)
 	}
 	else if( month == 2 )
 	{
-		if( day < 28 )
+		if( 1 <= day && day < 28 )
 		{
 			day++;
 		}
@@ -87,6 +87,8 @@ string nextDate(string now)
 			return "error";
 		}
 	}
+	else
+		return "error";
 
 	stringstream oss;
 	oss <<  year << " " 

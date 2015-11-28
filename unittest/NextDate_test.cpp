@@ -28,6 +28,28 @@ TEST( NextDate , Feb )
 	ASSERT_EQ( "1900 03 01" , nextDate("1900 02 28") );
 }
 
+TEST( NextDate , Path )
+{
+	ASSERT_EQ( "error" , nextDate("0 1 0") );
+	ASSERT_EQ( "error" , nextDate("0 4 0") );
+	ASSERT_EQ( "error" , nextDate("0 1 2147483647") );
+	ASSERT_EQ( "error" , nextDate("0 0 0") );
+	ASSERT_EQ( "1 01 01" , nextDate("0 12 31") );
+	ASSERT_EQ( "0 02 01" , nextDate("0 1 31") );
+	ASSERT_EQ( "0 05 01" , nextDate("0 4 30") );
+	ASSERT_EQ( "error" , nextDate("0 2 0") );
+	ASSERT_EQ( "error" , nextDate("0 4 2147483647") );
+	ASSERT_EQ( "1 03 01" , nextDate("1 2 28") );
+	ASSERT_EQ( "4 02 29" , nextDate("4 2 28") );
+	ASSERT_EQ( "error" , nextDate("0 2 2147483647") );
+	ASSERT_EQ( "0 02 29" , nextDate("0 2 28") );
+	ASSERT_EQ( "100 03 01" , nextDate("100 2 28") );
+	ASSERT_EQ( "4 03 01" , nextDate("4 2 29") );
+	ASSERT_EQ( "error" , nextDate("1 2 29") );
+	ASSERT_EQ( "0 03 01" , nextDate("0 2 29") );
+	ASSERT_EQ( "error" , nextDate("100 2 29") );
+}
+
 TEST( NextDate , WorstCase )
 {
 	vector<string> years = {"1812 ","1813 ","1912 ","2011 ","2012 "};
